@@ -1,11 +1,18 @@
 spring:
+  application:
+    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
-  rabbitmq:
-    host: 47.94.163.224
+     password: 123456
+     url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+   rabbitmq:
+     host: 47.94.163.224
     port: 5672
     username: guest
     password: guest
+env:
+  test4
+girl:
+  name: lili
+  age: 18

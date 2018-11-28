@@ -1,0 +1,14 @@
+zuul:
+  routes:
+  #  /myProduct/product/list -> /product/product/list
+    aaaaaa:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+#   simple writing
+#    product: /myProduct/**
+  ignored-patterns:
+    - /**/product/listForOrder
+management:
+  security:
+    enabled: false

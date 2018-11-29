@@ -1,4 +1,6 @@
 zuul:
+#忽略全部服务的敏感头
+  sensitive-headers: 
   routes:
   #  /myProduct/product/list -> /product/product/list
     aaaaaa:

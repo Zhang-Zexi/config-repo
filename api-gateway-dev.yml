@@ -14,10 +14,14 @@ zuul:
 management:
   security:
     enabled: false
-hystrix:
-  commond:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 5000
+#设置zuul超时时间
+ribbon: 
+  ReadTimeout: 5000
+  SocketTimeout: 5000
+# hystrix:
+#   commond:
+#     default:
+#       execution:
+#         isolation:
+#           thread:
+#             timeoutInMilliseconds: 5000
